@@ -13,9 +13,9 @@ section#experience
       p.text-green.font-bold @ Redso
     p.text-sm Sep 2019 - Present
     ul.mt-5
-      li Write modern, performant, maintainable code for a diverse array of client and internal projects
-      li Write modern, performant, maintainable code for a diverse array of client and internal projects
-      li Write modern, performant, maintainable code for a diverse array of client and internal projects
+      li Write modern, performant, maintainable code for a diverse array of client and internal projects.
+      li Work with a variety of different platforms and frameworks to build website and content management systems.
+
 
 
 </template>
