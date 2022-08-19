@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -13,8 +12,8 @@ jobs:
 
       - name: Install and Build
         run: |
-          yarn install
-          yarn run build --base=/SamLin-2022/
+          npm install
+          npm run build --base=/SamLin-2022/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
