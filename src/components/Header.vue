@@ -21,7 +21,7 @@ header.fixed.inset-x-0.top-0.flex.items-center.justify-end.gap-x-10.z-10
 .left.fixed.z-10
   .flex.flex-col.items-center.relative
     a.linkedin(href='https://www.linkedin.com/in/zhlin1122/' target="_blank")
-    a.github(href='https://github.com/SamLin1122' target="_blank")
+    a.github(href='https://github.com/samlin1122' target="_blank")
 .right.fixed.z-10
   .flex.flex-col.items-center.relative
     a(href="mailto:zhlin1122@gmail.com") zhlin1122@gmail.com
