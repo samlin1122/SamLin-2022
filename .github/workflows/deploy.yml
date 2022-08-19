@@ -1,23 +1,22 @@
-name: Deployment
+name: Build and Deploy
 on:
   push:
     branches:
       - main
-
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install and Build 🔧
+      - name: Install and Build
         run: |
-          npm install
-          npm run build --base=/SamLin-2022/
+          yarn install
+          yarn run build --base=/SamLin-2022/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.ACCESS_TOKEN }}
+          personal_token: ${{ secrets.ACCESS_TOKEN }}
           publish_dir: ./dist
