@@ -1,5 +1,6 @@
 <script setup>
-const slillsList = [
+import { reactive } from "vue";
+const developingList = reactive([
   "JavaScript (ES6+)",
   "RWD",
   "Vue",
@@ -9,21 +10,35 @@ const slillsList = [
   "Bootstrap",
   "Bulma",
   "Tailwind",
+  "Material UI",
   "etc",
-];
+]);
+const playingList = reactive([
+  "Vue3",
+  "Nuxt",
+  "TypeScript",
+  "GraphQL",
+  "Python",
+  "YAML",
+  "GCP",
+  "Tensorflow.js",
+  "etc",
+]);
 </script>
 
 <template lang="pug">
 section#about
   .flex.items-baseline.divide
     p.text-2xl.text-green.pr-3 01.
-    p.text-3xl.text-light.font-bold About Me
-  .flex.mt-10
-    .conten
-      p Here are a few technologies I’ve been working with :
-      ul.skills-list
-        li(v-for='list in slillsList') {{list}}
-    img
+    p.text-3xl.text-light.font-bold {{$t('about_title')}}
+  .mt-10
+    p {{$t('about_label_1')}} :
+    ul.skills-list
+      li(v-for='list in developingList') {{list}}
+  .mt-10.ml-auto.text-right
+    p {{$t('about_label_2')}} :
+    ul.skills-list
+      li(v-for='list in playingList') {{list}}
 
 
 </template>
@@ -53,6 +68,19 @@ section#about
       content: "▹";
       position: absolute;
       left: 0px;
+      color: var(--green);
+    }
+  }
+}
+.ml-auto {
+  li {
+    padding-right: 20px;
+    &::before {
+      content: "▹";
+      position: absolute;
+      left: unset;
+      right: 0px;
+      transform: rotate(180deg);
       color: var(--green);
     }
   }

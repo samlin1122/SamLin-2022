@@ -1,5 +1,11 @@
 <script setup>
-import { reactive, onMounted, nextTick } from "vue";
+import { reactive, ref, onMounted, nextTick } from "vue";
+import { useI18n } from "vue-i18n";
+
+const headerList = reactive(["about", "experience", "work", "contact"]);
+const { locale } = useI18n({ useScope: "global" });
+let lang = ref("tc");
+
 onMounted(() => {
   if (window.location.hash) {
     nextTick(() => {
@@ -9,19 +15,24 @@ onMounted(() => {
   }
 });
 
-const headerList = reactive(["About", "Experience", "Work", "Contact"]);
+const handleLangChange = () => {
+  lang.value = lang.value === "tc" ? "en" : "tc";
+  locale.value = lang.value;
+};
 </script>
 
 <template lang="pug">
 header.fixed.inset-x-0.top-0.flex.items-center.justify-end.gap-x-10.z-10
-  a.flex.items-center(v-for='(list, key) in headerList' :key='list'  :href="`#${list.toLowerCase()}`") 
+  a.flex.items-center(v-for='(list, key) in headerList' :key='list'  :href="`#${list}`") 
     p.header-key.mr-2 0{{key+1}}.
-    p.header-item {{list}}
-  a.button.px-3.py-2(href='https://docs.google.com/document/d/1TXq6JqcOfig6stJ06x5agzAwsPENW9Nqhw7YPgm0ZDA/edit?usp=sharing' target="_blank") Resume
+    p.header-item {{$t(list)}}
+  a.button.px-3.py-2(href='https://docs.google.com/document/d/1TXq6JqcOfig6stJ06x5agzAwsPENW9Nqhw7YPgm0ZDA/edit?usp=sharing' target="_blank") {{$t('resume')}}
+  a(@click='handleLangChange') {{$t('lang')}}
 .left.fixed.z-10
   .flex.flex-col.items-center.relative
     a.linkedin(href='https://www.linkedin.com/in/zhlin1122/' target="_blank")
     a.github(href='https://github.com/samlin1122' target="_blank")
+    a.hackMD(href='https://hackmd.io/?nav=overview' target="_blank")
 .right.fixed.z-10
   .flex.flex-col.items-center.relative
     a(href="mailto:zhlin1122@gmail.com") zhlin1122@gmail.com
@@ -72,7 +83,8 @@ header {
 }
 
 .linkedin,
-.github {
+.github,
+.hackMD {
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
   background: var(--vt-c-white);
@@ -85,5 +97,8 @@ header {
 }
 .github {
   mask-image: url("../assets/icons/github.svg");
+}
+.hackMD {
+  mask-image: url("../assets/icons/note.svg");
 }
 </style>
