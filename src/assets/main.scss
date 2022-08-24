@@ -20,15 +20,16 @@ section {
   align-items: flex-start;
   justify-content: center;
   padding-top: 100px;
+  width: 100%;
 }
 
 header,
 footer {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  @media (max-width: 767px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  padding-left: 50px;
+  padding-right: 50px;
+  @include touch {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -48,6 +49,7 @@ a * {
   border: 1px solid hsla(160, 100%, 37%, 1);
   border-radius: 4px;
   transition: 0.4s;
+  width: fit-content;
   &:hover {
     background-color: hsla(160, 100%, 37%, 0.1);
   }
@@ -55,8 +57,10 @@ a * {
 
 .divide {
   align-items: center;
-  p:first-child {
+  width: 100%;
+  p {
     align-self: flex-end;
+    white-space: nowrap;
   }
   &::after {
     content: "";
@@ -66,5 +70,8 @@ a * {
     height: 1px;
     margin-left: 20px;
     background-color: var(--color-border);
+    @include touch {
+      width: -webkit-fill-available;
+    }
   }
 }

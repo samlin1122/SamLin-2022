@@ -75,6 +75,9 @@ section#work
 
 <style lang="scss" scoped>
 .box {
+  @include touch {
+    width: 100%;
+  }
   li {
     color: var(--color-text);
   }

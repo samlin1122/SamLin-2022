@@ -31,24 +31,23 @@ section#about
   .flex.items-baseline.divide
     p.text-2xl.text-green.pr-3 01.
     p.text-3xl.text-light.font-bold {{$t('about_title')}}
-  .mt-10
+  .box.mt-10
     p {{$t('about_label_1')}} :
     ul.skills-list
       li(v-for='list in developingList') {{list}}
-  .mt-10.ml-auto.text-right
+  .box.mt-10.ml-auto.text-right
     p {{$t('about_label_2')}} :
-    ul.skills-list
+    ul.skills-list.ml-auto
       li(v-for='list in playingList') {{list}}
 
 
 </template>
 
 <style lang="scss" scoped>
-#about {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+.box {
+  @include touch {
+    width: 100%;
+  }
 }
 .skills-list {
   display: grid;
@@ -58,6 +57,9 @@ section#about
   margin: 20px 0px 0px;
   overflow: hidden;
   list-style: none;
+  @include touch {
+    grid-template-columns: repeat(2, minmax(140px, 50%));
+  }
   li {
     position: relative;
     margin-bottom: 10px;

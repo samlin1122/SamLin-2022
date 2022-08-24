@@ -5,6 +5,7 @@ import About from "./components/About.vue";
 import Experience from "./components/Experience.vue";
 import Work from "./components/Work.vue";
 import Contact from "./components/Contact.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template lang="pug">
@@ -15,6 +16,7 @@ main
   Experience
   Work
   Contact
+Footer
 </template>
 
 <style lang="scss" scoped>
@@ -24,5 +26,8 @@ main {
   max-width: 1600px;
   min-height: 100vh;
   padding: 0 150px;
+  @include touch {
+    padding: 0 64px;
+  }
 }
 </style>

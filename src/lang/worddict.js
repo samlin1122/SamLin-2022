@@ -5,9 +5,9 @@ export const en = {
   contact: "Contact",
   resume: "Resume",
   lang: "中文",
-  landing1: "Hi, I’m Sam, a web developer based in New Taipei City",
+  landing1: "Hi, I’m Sam, a web developer based in New Taipei City.",
   landing2:
-    "I’m a Front-End developer with 3+ years of experience working in Web development. ",
+    "I’m a Front-End developer with 3+ years of experience in Web development.",
   landing3:
     "Driven by curiosity and passion for new technology around me, I strive to be a full-stack developer.",
   about_title: "About Me",
@@ -19,7 +19,7 @@ export const en = {
   experience_detail_1:
     "Write modern, performant, maintainable code for a diverse array of client and internal projects.",
   experience_detail_2:
-    "Work with a variety of different platforms and frameworks to build website and content management systems.",
+    "Work with a variety of different platforms and frameworks to build websites and content management systems.",
   work_title: "Some Thing I've Built",
   work_clubsim_1:
     "Use Vue-CLI to develop from scratch and add SSR to improve SEO performance",
