@@ -1,5 +1,6 @@
 /* color palette from <https://github.com/vuejs/theme> */
 /* https://brittanychiang.com/ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap");
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -63,6 +64,8 @@
   font-weight: normal;
   line-height: 1.5;
   scroll-behavior: smooth;
+  font-family: "Roboto Mono", monospace, blinkmacsystemfont, -apple-system,
+    segoe ui, nunito sans, roboto, noto sans tc, sans-serif;
 }
 
 body {

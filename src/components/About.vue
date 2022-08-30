@@ -30,7 +30,7 @@ const playingList = reactive([
 section#about
   .flex.items-baseline.divide
     p.text-2xl.text-green.pr-3 01.
-    p.text-3xl.text-light.font-bold {{$t('about_title')}}
+    p.text-3xl.text-light.font-bold.font {{$t('about_title')}}
   .box.mt-10
     p {{$t('about_label_1')}} :
     ul.skills-list

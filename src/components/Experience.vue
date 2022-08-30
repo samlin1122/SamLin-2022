@@ -4,7 +4,7 @@
 section#experience
   .flex.items-baseline.divide
     p.text-2xl.text-green.pr-3 02.
-    p.text-3xl.text-light.font-bold {{$t('experience_title')}}
+    p.text-3xl.text-light.font-bold.font {{$t('experience_title')}}
   .mt-10
     .flex.items-center.pb-2
       p.text-light.font-bold.pr-2 {{$t('FE_developer')}}
