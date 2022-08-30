@@ -1,14 +1,9 @@
-# SamLin-2022
+# [SamLin-2022](https://samlin1122.github.io/SamLin-2022/)
 
-This template should help get you started developing with Vue 3 in Vite.
+This is my personal website in 2022.
 
-## Recommended IDE Setup
+Made with some new things recently I learned - Vue3 + Vite, and try some CI/CD in github action
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
@@ -26,10 +21,4 @@ npm run dev
 
 ```sh
 npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
