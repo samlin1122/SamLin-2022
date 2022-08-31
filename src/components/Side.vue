@@ -3,18 +3,18 @@ import { reactive } from "vue";
 const projectList = reactive([
   {
     title: "Personal Website V2",
-    description: "side_description_4",
+    description: "side_description_5",
     href: "https://samlin1122.github.io/SamLin-2022/",
     github: "https://github.com/samlin1122/SamLin-2022",
     techs: ["Vue3", "Tailwind CSS", "GitHub Action"],
   },
-  // {
-  //   title: "UI/UX Designer Website",
-  //   description: "side_description_3",
-  //   href: "https://jex-yeh.de.r.appspot.com/",
-  //   github: "https://github.com/samlin1122/jexyeh",
-  //   techs: ["Vue3", "Tailwind CSS", "GAE"],
-  // },
+  {
+    title: "Tensorflow",
+    description: "side_description_4",
+    href: "https://samlin1122.github.io/tensorflow.js/",
+    github: "https://github.com/samlin1122/tensorflow.js",
+    techs: ["React", "Tensorflow.js"],
+  },
   {
     title: "UI/UX Designer Website",
     description: "side_description_3",
@@ -49,9 +49,9 @@ section#side.items-center
           .icon.file
           a.icon.github(:href='github' target='_blank')
         p.mt-4.font-bold.text-light {{title}}
-        p.mt-4.text-sm.text-normal {{$t(description)}}
+        p.mt-3.text-sm.text-normal {{$t(description)}}
       .flex.gap-3
-        p.text-xs.text-normal.whitespace-nowrap(v-for="tech in techs") {{tech}}
+        p.text-xs.font-bold.text-normal.whitespace-nowrap(v-for="tech in techs") {{tech}}
     
 
 
@@ -60,7 +60,7 @@ section#side.items-center
 <style lang="scss" scoped>
 .project {
   width: 45%;
-  height: 300px;
+  min-height: 330px;
   padding: 2rem 1.75rem;
   margin: 2rem 0;
   box-shadow: 0 10px 30px -15px black;
@@ -70,6 +70,9 @@ section#side.items-center
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  @include touch {
+    width: 80%;
+  }
   &:hover {
     transform: translateY(-10px);
   }

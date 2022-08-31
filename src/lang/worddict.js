@@ -48,8 +48,10 @@ export const en = {
   contact_detail:
     "Looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!",
   side_project: "Side Project",
-  side_description_4:
+  side_description_5:
     "Second personal website built with Vue3 on GitHub Pages.",
+  side_description_4:
+    "This is very powerful and worth learning. Built with React and tensorflow posenet, open your camera, and dance with it!",
   side_description_3:
     "A personal web page for helping friends to become UI/UX designers and collaborating with product designers.",
   side_description_2:
@@ -98,7 +100,9 @@ export const tc = {
   contact_detail:
     "如果你有任何問題或想跟我打招呼, 我的信箱永遠準備接收任何機會. 我會盡快給你回覆!",
   side_project: "Side Project",
-  side_description_4: "在 GitHub Pages 上使用 Vue3 構建的第二個個人網站。",
+  side_description_5: "在 GitHub Pages 上使用 Vue3 構建的第二個個人網站。",
+  side_description_4:
+    "這是一個很強大，值得學習的東西。 使用 React 引入 tensorflow posenet，打開你的相機，和它一起跳舞！",
   side_description_3: "協助朋友轉行為UI/UX設計師，與產品設計師協作的個人網頁。",
   side_description_2:
     "使用原生javascript與Google Map API(place / directions / distances matrix)建構簡單的餐廳搜尋網站。",
