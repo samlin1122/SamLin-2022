@@ -8,6 +8,13 @@ const projectList = reactive([
     github: "https://github.com/samlin1122/SamLin-2022",
     techs: ["Vue3", "Tailwind CSS", "GitHub Action"],
   },
+  // {
+  //   title: "UI/UX Designer Website",
+  //   description: "side_description_3",
+  //   href: "https://jex-yeh.de.r.appspot.com/",
+  //   github: "https://github.com/samlin1122/jexyeh",
+  //   techs: ["Vue3", "Tailwind CSS", "GAE"],
+  // },
   {
     title: "UI/UX Designer Website",
     description: "side_description_3",
