@@ -42,10 +42,20 @@ export const en = {
   work_ehs_3: "The product is still in development",
   web: "Website",
   cms: "CMS",
+  single_page: "Single Page",
   contact_title: "What's Next",
   contact_label: "Get In Touch",
   contact_detail:
     "Looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!",
+  side_project: "Side Project",
+  side_description_4:
+    "Second personal website built with Vue3 on GitHub Pages.",
+  side_description_3:
+    "A personal web page for helping friends to become UI/UX designers and collaborating with product designers.",
+  side_description_2:
+    "Build a simple restaurant search website using vanilla javascript and Google Map API (place / directions / distances matrix).",
+  side_description_1:
+    "The first portfolio website I designed and built in 2019. I learned quite a bit about HTML, CSS, and Javascript. Since then, I think my web development has improved immensely.",
 };
 export const tc = {
   about: "關於",
@@ -82,8 +92,16 @@ export const tc = {
   work_ehs_3: "此產品正在開發中",
   web: "網站",
   cms: "後台管理系統",
+  single_page: "單頁式網站",
   contact_title: "接下來",
   contact_label: "與我聯繫",
   contact_detail:
     "如果你有任何問題或想跟我打招呼, 我的信箱永遠準備接收任何機會. 我會盡快給你回覆!",
+  side_project: "Side Project",
+  side_description_4: "在 GitHub Pages 上使用 Vue3 構建的第二個個人網站。",
+  side_description_3: "協助朋友轉行為UI/UX設計師，與產品設計師協作的個人網頁。",
+  side_description_2:
+    "使用原生javascript與Google Map API(place / directions / distances matrix)建構簡單的餐廳搜尋網站。",
+  side_description_1:
+    "我在2019年構建的第一個作品集網站。我學到了很多關於 HTML、CSS 和 Javascript 的知識。從那之後，我認為我的前端開發技術有了很大的進步。",
 };

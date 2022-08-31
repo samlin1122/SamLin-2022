@@ -4,6 +4,7 @@ import Greeting from "./components/Landing.vue";
 import About from "./components/About.vue";
 import Experience from "./components/Experience.vue";
 import Work from "./components/Work.vue";
+import Side from "./components/Side.vue";
 import Contact from "./components/Contact.vue";
 import Footer from "./components/Footer.vue";
 </script>
@@ -15,6 +16,7 @@ main
   About
   Experience
   Work
+  Side
   Contact
 Footer
 </template>

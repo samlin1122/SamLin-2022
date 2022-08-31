@@ -7,6 +7,7 @@ module.exports = {
       green: "hsla(160, 100%, 37%, 1)",
       light: "#f8f8f8",
       dark: "#222222",
+      normal: "rgba(235, 235, 235, 0.64)",
     },
   },
   plugins: [],

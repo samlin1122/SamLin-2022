@@ -8,7 +8,7 @@ const projectList = reactive([
     img: "clubsim",
     href: "https://www.clubsim.com.hk/zh/",
     description: ["work_clubsim_1", "work_clubsim_2"],
-    techs: ["Vue-CLI", "RWD", "GA", "SSR", "Axios"],
+    techs: ["Vue-CLI", "RWD", "GA", "SEO", "SSR", "Axios"],
   },
   {
     label: "web",
@@ -27,7 +27,7 @@ const projectList = reactive([
     techs: ["React", "Axios"],
   },
   {
-    label: "Single Page",
+    label: "single_page",
     title: "Smart Tone 5G Lab",
     img: "5g_lab",
     href: "https://5g.smartone.com/5GLab/tc/",
