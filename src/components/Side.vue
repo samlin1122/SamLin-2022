@@ -2,6 +2,13 @@
 import { reactive } from "vue";
 const projectList = reactive([
   {
+    title: "GitHub API",
+    description: "side_description_6",
+    href: "https://samlin1122.github.io/github-api/",
+    github: "https://github.com/samlin1122/github-api",
+    techs: ["React", "GitHub API", "GitHub Action"],
+  },
+  {
     title: "Personal Website V2",
     description: "side_description_5",
     href: "https://samlin1122.github.io/SamLin-2022/",

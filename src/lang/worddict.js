@@ -48,6 +48,8 @@ export const en = {
   contact_detail:
     "Looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!",
   side_project: "Side Project",
+  side_description_6:
+    "Run in GitHub Action & GitHub API after setting GitHub Environment secrets & Repository secrets in yml.",
   side_description_5:
     "Second personal website built with Vue3 on GitHub Pages.",
   side_description_4:
@@ -100,6 +102,8 @@ export const tc = {
   contact_detail:
     "如果你有任何問題或想跟我打招呼, 我的信箱永遠準備接收任何機會. 我會盡快給你回覆!",
   side_project: "Side Project",
+  side_description_6:
+    "在 yml 中設置 GitHub Environment secrets & Repository secrets 並在 GitHub Action & GitHub API 中運行",
   side_description_5: "在 GitHub Pages 上使用 Vue3 構建的第二個個人網站。",
   side_description_4:
     "這是一個很強大，值得學習的東西。 使用 React 引入 tensorflow posenet，打開你的相機，和它一起跳舞！",
